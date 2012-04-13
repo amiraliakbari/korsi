@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>کرسی های آزاد اندیشی</title>
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    
+    <style type="text/css">
+        body {
+        	direction: rtl;
+        }
+        
+    	.block {
+    		border: 2px #000 sloid;
+    	}
+    </style>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>مدیریت سامانه</legend>
+			<input type="button" onclick="$.ajax({url: 'controller.php', data: {action: 'reset'}})" value="بازآوری" />
+			<input type="button" onclick="$.ajax({url: 'controller.php', data: {action: 'refresh'}})" value="به روز رسانی" />
+		</fieldset>
+		<fieldset>
+			<legend>مدیریت افراد</legend>
+			<label for="str1">نام:</label>
+			<input type="text" id="str1" class="add_edit" value="" /><br/>
+			<label for="str1">رشته:</label>
+			<input type="text" id="str2" class="add_edit" value="" /><br/>
+			<label for="str1">مقطع:</label>
+			<input type="text" id="str3" class="add_edit" value="" /><br/>	
+			<input type="button" onclick="$.ajax({url: 'controller.php', data: {action: 'add', str1: $('#str1').attr('value'), str2: $('#str2').attr('value'), str3: $('#str3').attr('value')}}); $('.add_edit').attr('value', '');" value="افزودن" />
+			<hr/>
+			<input type="text" id="del_id" value="0" />
+			<input type="button" onclick="$.ajax({url: 'controller.php', data: {action: 'del', place: $('#del_id').attr('value')}});" value="حذف فرد" />
+			<input type="button" onclick="$.ajax({url: 'controller.php', data: {action: 'move', place: $('#move_id').attr('value'), delta: 1}});" value="بالا" />
+			<input type="button" onclick="$.ajax({url: 'controller.php', data: {action: 'move', place: $('#move_id').attr('value'), delta: -1}});" value="پایین" />
+		</fieldset>
+		<fieldset>
+			<legend>مدیریت زمان</legend>
+			<input type="button" onclick="$.ajax({url: 'controller.php', data: {action: 'reset_timer'}});" value="بازآوری زمان" />
+			<input type="button" onclick="$.ajax({url: 'controller.php', data: {action: 'stop_timer'}});" value="توقف زمان" />
+			<input type="button" onclick="$.ajax({url: 'controller.php', data: {action: 'start_timer'}});" value="آغاز زمان" />
+			<br/><br/>
+			<input type="button" onclick="$.ajax({url: 'controller.php', data: {action: 'prev'}})" value="نفر قبلی" />
+			<input type="button" onclick="$.ajax({url: 'controller.php', data: {action: 'next'}});" value="نفر بعدی" />
+		</fieldset>
+		<fieldset>
+			<legend>پیام رسانی</legend>
+			<input type="text" id="payam" style="width: 400px;" /><br/>
+			<input type="button" onclick="$.ajax({url: 'controller.php', data: {action: 'clear_message'}});" value="پاک کردن پیام" />
+			<input type="button" onclick="$.ajax({url: 'controller.php', data: {action: 'send_message', message: $('#payam').attr('value')}});" value="نمایش پیام" />
+	</form>
+</body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>گفتگوی دوستانه</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="css/style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="css/style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+	
+	<style type="text/css">
+		body, div{
+			direction: rtl;
+			text-align: right;
+		}
+		
+		.people-list li span{
+			font-family: "B Nazanin", "2 Nazanin", "Tahoma", "Arial" !important; 
+			font-size: 46px;
+			text-align: center;
+			font-weight: 900;
+		}
+		
+		a.active .t{
+			color: #FFF !important;
+		}
+		
+		.txt {
+			font-family: "B Nazanin", "2 Nazanin", "Tahoma", "Arial" !important; 
+		}
+		
+		.Naq  {
+			font-family: "B Mitra", "IranNastaliq", "BNazanin", "2 Nazanin", "Tahoma", "Arial" !important;
+		}
+		
+		.details{
+			margin: 30px 0px 0px 0px;
+		}
+		
+		.details h2, .details h3{
+			font-family: "B Nazanin", "2 Nazanin", "Tahoma", "Arial" !important; 
+			font-size: 22px;
+		}
+		
+		.details h2 {
+			text-align: center;	
+		}
+		
+		.timer {
+			font-size: 160px;
+			font-weight: 900;
+			font-family: "B Nazanin", "2 Nazanin", "Tahoma", "Arial" !important; 
+			text-align: center;
+			margin: 50px 10% 25px 10%;
+			padding: 0px 10px;
+			
+			border: 1px dashed black;
+			background: #000;
+		}
+		
+		.timer1{
+			color: #0F0;
+		}
+		
+		.timer2{
+			color: #F90;
+		}
+		
+		.timer3{
+			color: #F00;
+		}
+		
+		table.padded tr th {
+			padding: 10px 20px;
+		}
+		 
+		table.padded tr td {
+			padding: 10px 30px;
+		} 
+		
+		.center {
+			text-align: center;
+		}
+		
+		.bordered {
+			border: 1px solid black;
+		}
+		
+		.payam {
+			font-family: "B Nazanin", "2 Nazanin", "Tahoma", "Arial" !important;
+			font-size: 36px; 
+			font-weight: 900;
+			margin: 0 5% 25px 5%;
+			padding: 5px 10px;
+		}
+		
+		#str1, #str2, #str3 {
+			font-weight: 900;
+			color: white;
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+<div id="art-page-background-glare">
+        <div id="art-page-background-glare-image">
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-center">
+                        <div class="art-header-png"></div>
+                        <div class="art-header-jpeg"></div>
+                    </div>
+                    <div class="art-logo" style="left: 330px;">
+                     <!--<h1 id="name-text" class="art-logo-name" style="text-align:center; margin: -20px 0 10px 0;"><a href="#" class="Naq" style="font-size: 24px; margin-top:-20px;">گفتگوی دوستانه</a></h1>-->
+                     <h2 id="slogan-text" class="art-logo-text Naq" style="text-align:center; font-size: 46px; margin-top:-45px;">مهم ترین نقاط <br/>ضعف و قوت کشور</h2>
+					 <br/>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-sidebar1">
+                          <div class="art-vmenublock">
+                              <div class="art-vmenublock-body">
+                                          <div class="art-vmenublockheader">
+                                              <h3 class="t txt" style="text-align:center; margin-left:0px;">صف گفتگو:</h3>
+                                          </div>
+											<br/>
+                                          <div class="art-vmenublockcontent">
+                                              <div class="art-vmenublockcontent-body">
+                                                          <ul id="list" class="art-vmenu people-list">
+                                                          </ul>
+                                          
+                                          		<div class="cleared"></div>
+                                              </div>
+                                          </div>
+										  
+										  <br/>
+                          		<div class="cleared"></div>
+                              </div>
+                          </div>
+                          <div class="cleared"></div>
+                        </div>
+                        <div class="art-layout-cell art-content"  >
+                          <div class="art-post">
+                              <div class="art-post-body" style="margin-right: 0px;">
+                          <div class="art-post-inner art-article txt details">
+                          	<table border="1" class="padded" style="margin: 0 50px 0 0; width: auto;">
+                          		<tr>
+                          			<th class="txt" style="width: 70px;">نام</th>
+                          			<td style="width: 300px; background-color: black;"><h2 id="str1" class="art-postheader" style="margin-right: 0px;"></h2></td>
+                          		</tr>
+                          		<tr>
+                          			<th class="txt">رشته</th>
+                          			<td style="background-color: black;"><h2 id="str2" class="art-postheader"></h2></td>
+                          		</tr>
+                          		<tr>
+                          			<th class="txt">مقطع</th>
+                          			<td style="background-color: black;"><h2 id="str3" class="art-postheader"></h2></td>
+                          		</tr>
+                          	</table>
+                                          
+                                          
+                                          
+                                          <div class="art-postcontent">
+                                          </div>
+										  <div id="timer" class="timer timer1" style="direction: ltr; padding: 0 0;">4:00</div>
+                                          <div class="cleared"></div>
+                          </div>
+                          
+                          		<div class="cleared"></div>
+                              </div>
+                          </div>
+                          <div class="art-post">
+                              <div class="art-post-body">
+                          <div class="art-post-inner art-article">
+                                          <div class="cleared"></div>
+                          </div>
+                          
+                          		<div class="cleared"></div>
+                              </div>
+                          </div>
+                          <div class="cleared"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="payam" style="display:none" class="payam bordered center">سلام</div>
+                <div class="cleared"></div>
+                <div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-l"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-r"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>
+							گفتگوی دوستانه دانشجویی
+							<br/>
+							معاونت فرهنگی دانشگاه صنعتی شریف با همکاری کانون های فرهنگی
+							</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+    </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <script type="text/javascript">
+    	if (!console) console = {log: function(){}}
+    	
+    	var MAX_TIME = 240;
+    	 
+    	var timer_active;
+    	var time;
+    	
+    	var list;
+    	var list_index;
+    	
+    	function format_time(time) {
+    		var prefix = '';
+    		if (time<0){
+    			time = -time;
+    			prefix = '-';
+    		}
+    		return prefix + parseInt(time / 60) + ':' + (time%60<10 ? '0' : '')+ (time % 60);
+    	}
+    	
+    	function update_timer(active){
+    		timer_active = active;	
+    	}
+    	
+    	function reset_timer() {
+    	    timer_active = false;
+    		time = MAX_TIME;	
+    	}
+
+		
+		function clear_cur_info(){
+			$('#str1').html('');
+			$('#str2').html('');
+			$('#str3').html('');
+		}
+    	
+    	function tick(){
+    		if (timer_active) 
+    			time -= 1;
+    		$('#timer').html(format_time(time));
+    		if (time >= 60){
+    			$('#timer').css('color', '#0F0');
+    			return;
+    		}
+    		if (time > 0){
+    			$('#timer').css('color', '#F90');
+    			return;
+    		}
+			$('#timer').css('color', '#F00');
+    		
+    	}
+    	
+    	function render_list(){
+    		console.log("list rendered!");
+			var s = '';
+    		for (var i=0; i<list.length; i++){
+    			if (i<list_index-2) continue;
+    			if (i>list_index+5) {
+	    			s += '<li><a href="#" class="'+(i==list_index ? 'active' : '')+'"><span class="l"></span><span class="r"></span><span class="t">و ....</span></a></li>';	
+    				break;
+    			}
+    			s += '<li><a href="#" class="'+(i==list_index ? 'active' : '')+'"><span class="l"></span><span class="r"></span><span class="t">'+list[i][0]+'</span></a></li>';
+    		}
+			$('#list').html(s);
+
+			if (list_index >= list.length){
+				clear_cur_info();
+				return false; //list_index = list.length - 1;			
+			}
+			
+			$('#str1').html(list[list_index][0]);
+			$('#str2').html(list[list_index][1]);
+			$('#str3').html(list[list_index][2]);
+			
+			return true;
+    	}
+
+    	function update_list_index(index, reset){
+			if (reset){
+				list_index = index;
+				reset_timer();
+				clear_cur_info();
+				render_list();
+				return true;
+			}
+			if (index != list_index){
+				list_index = index;
+				render_list();
+				return true;
+			}
+			return false;
+    	}
+    	
+    	
+    	var payam = '';
+    	var payam_status = 0;
+    	
+    	function sync_payam(){
+    		$.ajax({url: 'controller.php',
+    				data: {action: 'get', key: 'message'}, 
+    				dataType: 'text',
+    				success: function(msg) {
+    					payam = msg;
+    					$('#payam').html(payam);
+    					$('#payam').fadeIn('slow');
+    				}});
+    	}
+    	
+    	function handle_payam(status){
+    		if (status==2){
+    			$('#payam').fadeOut('slow');
+    			sync_payam();
+    			return;
+    		}
+    		if (status == payam_status) return;
+    		
+    		payam_status = status;
+    		if (payam_status == 0){
+    			$('#payam').fadeOut('slow');
+    		} else {
+    			sync_payam();
+    		}
+    	}
+    	
+    	function sync(){
+    		console.log("sync");
+    		$.ajax({url: 'controller.php',
+    				data: 'action=sync', 
+    				dataType: 'text',
+    				success: function(status) {
+    					//status: (timer?) (invalidated?) (index) (reset?) (payam?)
+    					var a = status.split(' ');
+    					update_timer(a[0] == '1');
+    					if (a[1] == '1') update_list();
+    					update_list_index(parseInt(a[2]), a[3]!='0');
+    					handle_payam(parseInt(a[4]));
+    				}});
+    	}
+    	
+    	function update_list(){
+    		$.ajax({url: 'controller.php',
+    				data: 'action=list', 
+    				dataType: 'json',
+    				success: function(l) {
+    					list = [];
+    					for (var i=0; i<l.list.length; i++){
+    						list.push(l.list[i].slice(0));
+    					}
+    					console.log('list updated:', list);
+    					render_list();
+    				}});
+    	}
+    	
+    	$('body').ready(function(){
+			reset_timer();
+    		
+    		list = [];
+    		list_index = 0;
+    		
+    		setInterval(sync, 1000);
+    		setInterval(tick, 1000);
+    	});
+    </script>
+</body>
+</html>
