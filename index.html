@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>گفتگوی دوستانه</title>
+    <title>کرسی آزاد‌اندیشی</title>
 
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
     <!--[if IE 6]><link rel="stylesheet" href="css/style.ie6.css" type="text/css" media="screen" /><![endif]-->
@@ -18,7 +18,7 @@
 		}
 		
 		.people-list li span{
-			font-family: "B Nazanin", "2 Nazanin", "Tahoma", "Arial" !important; 
+			font-family: "B Nazanin", "2 Nazanin", "Tahoma", "Arial", serif !important;
 			font-size: 46px;
 			text-align: center;
 			font-weight: 900;
@@ -29,19 +29,19 @@
 		}
 		
 		.txt {
-			font-family: "B Nazanin", "2 Nazanin", "Tahoma", "Arial" !important; 
+			font-family: "B Nazanin", "2 Nazanin", "Tahoma", "Arial", serif !important;
 		}
 		
 		.Naq  {
-			font-family: "B Mitra", "IranNastaliq", "BNazanin", "2 Nazanin", "Tahoma", "Arial" !important;
+			font-family: "B Mitra", "IranNastaliq", "BNazanin", "2 Nazanin", "Tahoma", "Arial", serif !important;
 		}
 		
-		.details{
-			margin: 30px 0px 0px 0px;
+		.details {
+			margin: 30px 0 0 0;
 		}
 		
-		.details h2, .details h3{
-			font-family: "B Nazanin", "2 Nazanin", "Tahoma", "Arial" !important; 
+		.details h2, .details h3 {
+			font-family: "B Nazanin", "2 Nazanin", "Tahoma", "Arial", serif !important;
 			font-size: 22px;
 		}
 		
@@ -52,24 +52,24 @@
 		.timer {
 			font-size: 160px;
 			font-weight: 900;
-			font-family: "B Nazanin", "2 Nazanin", "Tahoma", "Arial" !important; 
+			font-family: "B Nazanin", "2 Nazanin", "Tahoma", "Arial", serif !important;
 			text-align: center;
 			margin: 50px 10% 25px 10%;
-			padding: 0px 10px;
+			padding: 0 10px;
 			
 			border: 1px dashed black;
 			background: #000;
 		}
 		
-		.timer1{
+		.timer1 {
 			color: #0F0;
 		}
 		
-		.timer2{
+		.timer2 {
 			color: #F90;
 		}
 		
-		.timer3{
+		.timer3 {
 			color: #F00;
 		}
 		
@@ -90,18 +90,43 @@
 		}
 		
 		.payam {
-			font-family: "B Nazanin", "2 Nazanin", "Tahoma", "Arial" !important;
+			font-family: "B Nazanin", "2 Nazanin", "Tahoma", "Arial", serif !important;
 			font-size: 36px; 
 			font-weight: 900;
 			margin: 0 5% 25px 5%;
 			padding: 5px 10px;
 		}
+
+        .button {
+            cursor: pointer;
+            margin: 0 10px;
+            padding: 3px 3px;
+            border: 1px solid black;
+            color: black;
+        }
+
+        .button:hover {
+            color: #900;
+            border: 2px solid #900;
+            font-style: italic;
+        }
 		
 		#str1, #str2, #str3 {
 			font-weight: 900;
 			color: white;
 			background-color: black;
 		}
+
+        .offline_pane {
+            direction: rtl;
+            position: fixed;
+            bottom: 0;
+            background-color: gray;
+            width: 100%;
+            height: 30px;
+            padding-top: 10px;
+            text-align: center;
+        }
 	</style>
 </head>
 <body>
@@ -136,7 +161,7 @@
                           <div class="art-vmenublock">
                               <div class="art-vmenublock-body">
                                           <div class="art-vmenublockheader">
-                                              <h3 class="t txt" style="text-align:center; margin-left:0px;">صف گفتگو:</h3>
+                                              <h3 class="t txt" style="text-align:center; margin-left:0;">صف گفتگو:</h3>
                                           </div>
 											<br/>
                                           <div class="art-vmenublockcontent">
@@ -156,12 +181,12 @@
                         </div>
                         <div class="art-layout-cell art-content"  >
                           <div class="art-post">
-                              <div class="art-post-body" style="margin-right: 0px;">
+                              <div class="art-post-body" style="margin-right: 0;">
                           <div class="art-post-inner art-article txt details">
                           	<table border="1" class="padded" style="margin: 0 55px 0 0; width: auto;" align="center">
                           		<tr>
                           			<!--<th class="txt" style="width: 70px;">نام</th>-->
-                          			<td style="width: 423px; padding-right:5px; background-color: black;"><h2 id="str1" class="art-postheader" style="margin-right: 0px;">امیرعلی اکبری</h2></td>
+                          			<td style="width: 423px; padding-right:5px; background-color: black;"><h2 id="str1" class="art-postheader" style="margin-right: 0;">امیرعلی اکبری</h2></td>
                           		</tr>
                           		<!--<tr>
                           			<th class="txt">رشته</th>
@@ -207,9 +232,9 @@
                     <div class="art-footer-body">
                         <div class="art-footer-text">
                             <p>
-							گفتگوی دوستانه دانشجویی
+							کرسی‌های آزاد اندیشی
 							<br/>
-							معاونت فرهنگی دانشگاه صنعتی شریف با همکاری کانون های فرهنگی
+							کانون مهدویت میثاق دانشگاه صنعتی شریف
 							</p>
                         </div>
                 		<div class="cleared"></div>
@@ -223,20 +248,57 @@
         </div>
     </div>
     
-    
+    <div class="offline_pane">
+        <img class="button" src="images/continue.png" alt="ادامه" onclick="timer_continue()" />
+        <img class="button" src="images/pause.png" alt="توقف" onclick="timer_pause()" />
+        <img class="button" src="images/reset.png" alt="بازآوری" onclick="timer_reset()" />
+        |||
+        <img class="button" src="images/prev.png" alt="قبلی" onclick="list_go(-1)" />
+        <img class="button" src="images/next.png" alt="بعدی" onclick="list_go(+1)" />
+        |||
+        <input type="text" id='new_person' style="width: 50px;" />
+        <img class="button" src="images/add.png" alt="افزودن" onclick="list_add($('#new_person').val()); $('#new_person').val('')" />
+        <img class="button" src="images/delete.png" alt="حذف" onclick="list_delete()" />
+        |||
+        <input type="text" id='new_payam' style="width: 100px;" />
+        <img class="button" src="images/add.png" alt="نمایش" onclick="show_payam($('#new_payam').val())" />
+        <img class="button" src="images/delete.png" alt="پاک کردن" onclick="hide_payam()" />
+    </div>
     
     
     <script type="text/javascript">
-    	if (!console) console = {log: function(){}}
+        /**************
+         *  SETTINGS  *
+         **************/
+    	var OFFLINE = true;
+
+        var time = 0;
+        var timer_active = false;
+        var MAX_TIME = 240;
+        var YELLOW_THRESHOLD = 60;
+        var RED_THRESHOLD = 10;
     	
-    	var MAX_TIME = 240;
-    	 
-    	var timer_active;
-    	var time;
-    	
-    	var list;
-    	var list_index;
-    	
+    	var list = [];
+    	var list_index = 0;
+    	var LIST_PREVIOUS_COUNT = 2;
+    	var LIST_NEXT_COUNT = 5;
+
+        var payam = '';
+        var payam_status = 0;
+
+
+
+        /***************************************************
+        *  Backward Compatibility & Cross-Browser Support  *
+        ****************************************************/
+        if (!console) console = {log: function(x){}};
+
+
+
+        /***********
+         *  Timer  *
+         ***********/
+
     	function format_time(time) {
     		var prefix = '';
     		if (time<0){
@@ -250,65 +312,88 @@
     		timer_active = active;	
     	}
     	
-    	function reset_timer() {
+    	function timer_reset() {
     	    timer_active = false;
     		time = MAX_TIME;	
     	}
 
-		
+        function timer_continue(){
+            timer_active = true;
+        }
+
+        function timer_pause(){
+            timer_active = false;
+        }
+
 		function clear_cur_info(){
 			$('#str1').html('');
 			$('#str2').html('');
 			$('#str3').html('');
 		}
-    	
+
+        /**
+        * زمان را به روز می‌کند و رنگ آن را تعیین می‌کند.
+         *
+         */
     	function tick(){
     		if (timer_active) 
     			time -= 1;
     		$('#timer').html(format_time(time));
-    		if (time >= 60){
+
+            //TODO: Use timerN css class
+    		if (time >= YELLOW_THRESHOLD){
     			$('#timer').css('color', '#0F0');
     			return;
     		}
-    		if (time > 0){
+    		if (time > RED_THRESHOLD){
     			$('#timer').css('color', '#F90');
     			return;
     		}
 			$('#timer').css('color', '#F00');
-    		
     	}
-    	
-    	function render_list(){
-    		console.log("list rendered!");
-			var s = '';
-    		for (var i=0; i<list.length; i++){
-    			if (i<list_index-2) continue;
-    			if (i>list_index+5) {
-	    			s += '<li><a href="#" class="'+(i==list_index ? 'active' : '')+'"><span class="l"></span><span class="r"></span><span class="t">و ....</span></a></li>';	
-    				break;
-    			}
-    			s += '<li><a href="#" class="'+(i==list_index ? 'active' : '')+'"><span class="l"></span><span class="r"></span><span class="t">'+list[i][0]+'</span></a></li>';
-    		}
-			$('#list').html(s);
 
-			if (list_index >= list.length){
-				clear_cur_info();
-				return false; //list_index = list.length - 1;			
-			}
-			
-            if (list_index < list.length){
-			    $('#str1').html(list[list_index][0]);
-			    $('#str2').html(list[list_index][1]);
-			    $('#str3').html(list[list_index][2]);
+
+
+        /*****************
+         *  PEOPLE LIST  *
+         *****************/
+
+        /**
+         * لیست افراد و مشخصات فرد فعلی را به روز می‌کند.
+         *
+         */
+        function render_list(){
+            console.log("list rendered!");
+            var s = '';
+            for (var i=0; i<list.length; i++){
+                if (i<list_index-LIST_PREVIOUS_COUNT) continue;
+                if (i>list_index+LIST_NEXT_COUNT) {
+                    s += '<li><a href="#" class="'+(i==list_index ? 'active' : '')+'"><span class="l"></span><span class="r"></span><span class="t">و ....</span></a></li>';
+                    break;
+                }
+                s += '<li><a href="#" class="'+(i==list_index ? 'active' : '')+'"><span class="l"></span><span class="r"></span><span class="t">'+list[i][0]+'</span></a></li>';
             }
-			
-			return true;
-    	}
+            $('#list').html(s);
+
+            if (list_index >= list.length){
+                clear_cur_info();
+                return false;
+            }
+
+            if (list_index < list.length){
+                $('#str1').html(list[list_index][0]);
+                $('#str2').html(list[list_index][1]);
+                $('#str3').html(list[list_index][2]);
+            }
+
+            return true;
+        }
+
 
     	function update_list_index(index, reset){
 			if (reset){
 				list_index = index;
-				reset_timer();
+				timer_reset();
 				clear_cur_info();
 				render_list();
 				return true;
@@ -320,25 +405,61 @@
 			}
 			return false;
     	}
-    	
-    	
-    	var payam = '';
-    	var payam_status = 0;
-    	
+
+        function update_list(){
+            $.ajax({url: 'controller.php',
+                data: 'action=list',
+                dataType: 'json',
+                success: function(l) {
+                    list = [];
+                    for (var i=0; i<l.list.length; i++){
+                        list.push(l.list[i].slice(0));
+                    }
+                    console.log('list updated:', list);
+                    render_list();
+                }});
+        }
+
+        function list_go(delta){
+            var n = list_index + delta;
+            if (n>=0 && n<list.length){
+                list_index = n;
+            }
+        }
+
+        function list_add(name){
+            list.push([name, '', '']);
+        }
+
+        function list_delete(){
+            for (var i=0; i<list.length; i++){
+                if (i>list_index)
+                    list[i-1] = list[i];
+            }
+            list.pop();
+
+            if (list_index >= list.length)
+                list_index = list.length - 1;
+        }
+
+
+
+        /***********
+         *  PAYAM  *
+         ***********/
+
     	function sync_payam(){
     		$.ajax({url: 'controller.php',
     				data: {action: 'get', key: 'message'}, 
     				dataType: 'text',
     				success: function(msg) {
-    					payam = msg;
-    					$('#payam').html(payam);
-    					$('#payam').fadeIn('slow');
+    					show_payam(msg);
     				}});
     	}
     	
     	function handle_payam(status){
     		if (status==2){
-    			$('#payam').fadeOut('slow');
+    			hide_payam();
     			sync_payam();
     			return;
     		}
@@ -346,53 +467,68 @@
     		
     		payam_status = status;
     		if (payam_status == 0){
-    			$('#payam').fadeOut('slow');
+    			hide_payam();
     		} else {
     			sync_payam();
     		}
     	}
-    	
+
+        function hide_payam(){
+            $('#payam').fadeOut('slow');
+        }
+
+        function show_payam(msg){
+            payam = msg;
+            $('#payam').html(payam);
+            $('#payam').fadeIn('slow');
+        }
+
+
+
+        /**********
+         *  SYNC  *
+         **********/
+
     	function sync(){
-    		console.log("sync");
-    		$.ajax({url: 'controller.php',
-    				data: 'action=sync', 
-    				dataType: 'text',
-    				success: function(status) {
-    					//status: (timer?) (invalidated?) (index) (reset?) (payam?)
-    					var a = status.split(' ');
-    					update_timer(a[0] == '1');
-    					if (a[1] == '1') update_list();
-    					update_list_index(parseInt(a[2]), a[3]!='0');
-    					handle_payam(parseInt(a[4]));
-    				}});
+            if (!OFFLINE){
+                console.log("sync");
+                $.ajax({url: 'controller.php',
+                        data: 'action=sync',
+                        dataType: 'text',
+                        success: function(status) {
+                            //status: (timer?) (invalidated?) (index) (reset?) (payam?)
+                            var a = status.split(' ');
+                            update_timer(a[0] == '1');
+                            if (a[1] == '1') update_list();
+                            update_list_index(parseInt(a[2]), a[3]!='0');
+                            handle_payam(parseInt(a[4]));
+                        }});
+            } else {
+                render_list();
+            }
     	}
-    	
-    	function update_list(){
-    		$.ajax({url: 'controller.php',
-    				data: 'action=list', 
-    				dataType: 'json',
-    				success: function(l) {
-    					list = [];
-    					for (var i=0; i<l.list.length; i++){
-    						list.push(l.list[i].slice(0));
-    					}
-    					console.log('list updated:', list);
-    					render_list();
-    				}});
-    	}
-    	
+
+
+
+        /*************
+         *  STARTUP  *
+         *************/
+
+        /**
+         * راه اندازی اولیه‌ی صفحه
+         */
     	$('body').ready(function(){
-			reset_timer();
-    		
-    		list = [];
-    		list_index = 0;
-    		
+			timer_reset();
+
     		setInterval(sync, 1000);
     		setInterval(tick, 1000);
     	});
 
+
+        /**
+         * برای پشتیبانی از میان‌برهای صفحه کلید
+         */
         $(function(){
-            console.log('xx');
             $('body').keydown(function(e){
                 if (e.keyCode == 65){
 

@@ -301,7 +301,7 @@ table.position
 
 .art-sheet
 {
-  top: 50px !important;
+  top: 10px !important;
   margin-bottom: 50px !important;
   cursor:auto;
   width: 800px;
@@ -316,7 +316,7 @@ div.art-header
   margin: 0 auto;
   position: relative;
   width: 100%;
-  height: 150px;
+  height: 175px;
   overflow: hidden;
 }
 
@@ -349,10 +349,9 @@ div.art-header-jpeg
   left:-50%;
   width: 792px;
   height: 350px;
-/*  background-image: url('../images/header.png');*/
-  background-image: url(../images/en.jpg);
+  background-image: url(../images/en.png);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 0 -2px;
 }
 
 
